@@ -15,10 +15,10 @@ export interface SystemConfigurationResult {
 
 export interface AppLocation {
   name: string;
-  country?: string;
+  country?: string | undefined;
   latitude: number;
   longitude: number;
-  timezone?: string;
+  timezone?: string | undefined;
 }
 
 export interface WeeklySummary {

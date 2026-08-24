@@ -28,12 +28,12 @@ export interface WeatherForecastDay {
   effectivePsh: number;
   shortwaveRadiationMjM2: number;
   usableEnergyKwh: number;
-  temperatureMinC?: number;
-  temperatureMaxC?: number;
-  windSpeedMaxKmh?: number;
-  daylightDurationHours?: number;
-  sunrise?: string;
-  sunset?: string;
+  temperatureMinC?: number | undefined;
+  temperatureMaxC?: number | undefined;
+  windSpeedMaxKmh?: number | undefined;
+  daylightDurationHours?: number | undefined;
+  sunrise?: string | undefined;
+  sunset?: string | undefined;
 }
 
 /** Weather data normalized out of the Open-Meteo response, before solar maths. */
@@ -44,12 +44,12 @@ export interface RawForecastDay {
   precipitationMm: number;
   sunshineDurationHours: number;
   shortwaveRadiationMjM2: number;
-  temperatureMinC?: number;
-  temperatureMaxC?: number;
-  windSpeedMaxKmh?: number;
-  daylightDurationHours?: number;
-  sunrise?: string;
-  sunset?: string;
+  temperatureMinC?: number | undefined;
+  temperatureMaxC?: number | undefined;
+  windSpeedMaxKmh?: number | undefined;
+  daylightDurationHours?: number | undefined;
+  sunrise?: string | undefined;
+  sunset?: string | undefined;
 }
 
 export interface WeatherForecast {
