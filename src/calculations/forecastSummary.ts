@@ -58,8 +58,8 @@ export function calculateForecastSummary(days: WeatherForecastDay[]): ForecastSu
   return {
     totalEnergyKwh,
     averageDailyEnergyKwh: avg(days.map((d) => d.usableEnergyKwh)),
-    bestDay: sortedByEnergy.length ? sortedByEnergy[sortedByEnergy.length - 1] : null,
-    worstDay: sortedByEnergy.length ? sortedByEnergy[0] : null,
+    bestDay: sortedByEnergy[sortedByEnergy.length - 1] ?? null,
+    worstDay: sortedByEnergy[0] ?? null,
     avgSunshineHours: avg(days.map((d) => d.sunshineDurationHours)),
     avgRainProbability: avg(days.map((d) => d.precipitationProbability)),
     avgEffectivePsh,
