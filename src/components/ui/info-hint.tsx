@@ -1,11 +1,18 @@
 import { Info } from "lucide-react";
 
-import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
 
 export function InfoHint({ text, className }: { text: string; className?: string }) {
   return (
+    <TooltipProvider delayDuration={150}>
     <Tooltip>
+
       <TooltipTrigger asChild>
         <button
           type="button"
