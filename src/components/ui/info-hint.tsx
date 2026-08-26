@@ -27,5 +27,6 @@ export function InfoHint({ text, className }: { text: string; className?: string
       </TooltipTrigger>
       <TooltipContent className="max-w-64 text-xs leading-relaxed">{text}</TooltipContent>
     </Tooltip>
-  );
+    </TooltipProvider>
+
 }
