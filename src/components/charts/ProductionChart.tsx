@@ -89,8 +89,9 @@ export function ProductionChart({
               tick={{ fontSize: 11, fill: "var(--color-muted-foreground)" }}
               tickLine={false}
               axisLine={false}
-              width={44}
-              unit=" kWh"
+              width={52}
+              tickFormatter={(value: number) => `${value} kWh`}
+
             />
             <Tooltip content={<ChartTooltip />} cursor={{ stroke: "var(--color-primary)", strokeOpacity: 0.35 }} />
             {baselineDailyEnergyKwh > 0 ? (
