@@ -208,7 +208,7 @@ function Dashboard() {
           </div>
         </section>
 
-        <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_360px]">
+        <div className="grid items-start gap-6 lg:grid-cols-[minmax(0,1fr)_360px]">
           <section aria-labelledby="chart-heading" className="panel order-2 p-4 sm:p-5 lg:order-1">
             <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
               <h2 id="chart-heading" className="text-sm font-semibold uppercase tracking-wider">
